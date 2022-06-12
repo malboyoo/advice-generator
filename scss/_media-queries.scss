@@ -1,0 +1,7 @@
+/* Landscape phones and down */
+
+@mixin xs {
+   @media (max-width: 650px) {
+      @content;
+   }
+}
