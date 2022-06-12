@@ -16,8 +16,8 @@ The challenge is to build out this advice generator app using the [Advice Slip A
 
 ### Links
 
--  Solution URL: [Solution URL here](TBC)
--  Live Site URL: [Live site URL here](TBC)
+-  Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/advice-generator-app-sasstypescript-IXC-M-enPg)
+-  Live Site URL: [Live site URL here](https://benevolent-cassata-e2174a.netlify.app/)
 
 ### Built with
 
