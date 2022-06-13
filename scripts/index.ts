@@ -11,14 +11,20 @@ interface Sentence {
 
 rollBtn.addEventListener("click", () => {
    generatedAdvice();
-   // taking into consideration advice is changing every 2sec in the API REST, i decide to implement a visual effect to not refresh too soon.
+   // taking into consideration advice is changing every 2sec in the API REST, i decide to add a CD on button
+   apiCooldown(1800);
+});
+
+const apiCooldown = (ms: number) => {
    rollBtn.classList.add("roll-btn-cd");
    rollBtn.classList.remove("roll-btn-ok");
+   rollBtn.disabled = true;
    setTimeout(() => {
       rollBtn.classList.add("roll-btn-ok");
       rollBtn.classList.remove("roll-btn-cd");
-   }, 1800);
-});
+      rollBtn.disabled = false;
+   }, ms);
+};
 
 const generatedAdvice = async () => {
    const response = await fetch(url);
