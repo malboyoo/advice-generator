@@ -83,6 +83,7 @@ body {
       width: 60px;
       height: 60px;
       border-radius: 50%;
+      transition: all 0.3s;
       &-ok {
          background-color: var(--neon-green);
          background-image: url("../images/icon-dice.svg");

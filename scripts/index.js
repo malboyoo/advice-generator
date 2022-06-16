@@ -6,9 +6,9 @@ const url = "https://api.adviceslip.com/advice";
 rollBtn.addEventListener("click", () => {
     generatedAdvice();
     // taking into consideration advice is changing every 2sec in the API REST, i decide to add a CD on button
-    apiCooldown(1800);
+    btnCooldown(1800);
 });
-const apiCooldown = (ms) => {
+const btnCooldown = (ms) => {
     rollBtn.classList.add("roll-btn-cd");
     rollBtn.classList.remove("roll-btn-ok");
     rollBtn.disabled = true;
